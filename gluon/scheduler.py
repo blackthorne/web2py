@@ -1360,7 +1360,7 @@ class Scheduler(MetaScheduler):
                 ws = wkgroups.get(gname)
                 if ws:
                     if task.broadcast:
-                        for worker in ws['workers']:                       
+                        for worker in ws['workers']:
                             new_task = db.scheduler_task.insert(
                                 application_name = task.application_name,
                                 task_name = task.task_name,
